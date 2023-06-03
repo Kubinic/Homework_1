@@ -1,0 +1,16 @@
+# Задача 8: Требуется определить, можно ли от шоколадки
+# размером n × m долек отломить k долек,
+# если разрешается сделать один разлом по прямой между дольками
+# (то есть разломить шоколадку на два прямоугольника)
+width = int(input('Введите ширену : '))
+length = int(input('Введите длинну : '))
+quantity = int(input("Введите количество долек : "))
+answer = ""
+if quantity <= width * length:
+    if quantity % width == 0 or quantity % length == 0:
+        answer = "Да"
+    else:
+        answer = "Нет"
+else:
+    answer = "Нет"
+print(answer)
